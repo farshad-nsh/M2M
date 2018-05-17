@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root alignment="TOP_CENTER" layoutX="20.0" layoutY="50.0" type="javafx.scene.layout.VBox"
+         xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <TextField fx:id="username" >enter username please</TextField>
+    <TextField fx:id="password">enter password please</TextField>
+    <Button onAction="#login" text="Login" textFill="green"/>
+</fx:root>

@@ -1,0 +1,4 @@
+sudo chmod 666 /dev/ttyUSB0
+
+
+curl --data 'xbeeUsername=mojtaba&xbeeData=5&xbeeMac=13A20041472E68' 91.98.158.53:4000/sendActuatorDataViaStaticIp

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root layoutX="0.0" layoutY="0.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="188.0" prefWidth="571.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="5.0" layoutY="88.0">
+         <children>
+            <Label lineSpacing="5.0" prefHeight="43.0" prefWidth="274.0" text="please select type of your OS">
+               <font>
+                  <Font name="System Font Bold" size="18.0" />
+               </font></Label>
+            <RadioButton fx:id="windows" mnemonicParsing="false" text="windows">
+               <toggleGroup>
+                  <ToggleGroup fx:id="selectOS" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="mac" mnemonicParsing="false" text="mac" toggleGroup="$selectOS" />
+            <RadioButton fx:id="linux" mnemonicParsing="false" text="linux" toggleGroup="$selectOS" />
+         </children>
+      </VBox>
+      <VBox prefHeight="40.0" prefWidth="237.0">
+         <children>
+            <TextField fx:id="fxServerPort" prefHeight="26.0" prefWidth="179.0" text="please write the server port" />
+         </children>
+      </VBox>
+   </children>
+</fx:root>

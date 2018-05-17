@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button layoutX="40.0" layoutY="286.0" mnemonicParsing="false" onAction="#add" text="Button" textFill="#3126c7">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+        <Label layoutX="40.0" layoutY="33.0" text="please enter the USB port name" textFill="#2b6832">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        <TextField fx:id="result" layoutX="34.0" layoutY="331.0" prefHeight="27.0" prefWidth="555.0" promptText="result is:" />
+        <VBox layoutX="40.0" layoutY="64.0" prefHeight="200.0" prefWidth="100.0">
+            <children>
+                <RadioButton fx:id="usb1" mnemonicParsing="false" prefHeight="18.0" prefWidth="168.0" text="usb1">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="selectedUsbPort" />
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="usb2" mnemonicParsing="false" text="usb2" toggleGroup="$selectedUsbPort" />
+            </children>
+        </VBox>
+        <TextField fx:id="UIPort" layoutX="351.0" layoutY="31.0" />
+    </children>
+</fx:root>
